@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/loandingScreen.css">
     <title>Tecnitours - Tu Agencia de Viajes en Honduras</title>
 </head>
 
 <body>
+    <div id="loader">
+        <div class="earth-container">
+            <img src="imgs/icons/planeta-tierra.png" alt="Planeta Tierra" class="earth">
+            <div class="orbit">
+                <img src="imgs/icons/avion.png" alt="avion" class="plane">
+            </div>
+        </div>
+    </div>
     <header>
         <div class="brand">
             <img src="imgs/logo/logo-tecnitours.png" alt="Logo Tecnitours">
@@ -15,48 +25,51 @@
         </div>
         <nav>
             <ul>
-                <li><a href="/tecnitours/index.html">Inicio</a></li>
-                <li><a href="/tecnitours/pages/about.html">Nosotros</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/about.html">Nosotros</a></li>
                 <li class="menuDesplegable">
                     <button class="menubtn">Servicios</button>
                     <div class="linksMenu">
-                        <a href="/tecnitours/pages/servicioGenerales.html">Generales</a>
-                        <a href="/tecnitours/pages/servicioHoteles.html">Hoteles</a>
-                        <a href="/tecnitours/pages/servicioVuelos.html">Vuelos</a>
-                        <a href="/tecnitours/pages/servicioPaquetes.html">Paquetes</a>
+                        <a href="pages/servicioGenerales.html">Generales</a>
+                        <a href="pages/servicioHoteles.html">Hoteles</a>
+                        <a href="pages/servicioVuelos.html">Vuelos</a>
+                        <a href="pages/servicioPaquetes.html">Paquetes</a>
                     </div>
                 </li>
                 <li class="menuDesplegable">
                     <button class="menubtn">Explorar</button>
                     <div class="linksMenu">
-                        <a href="/tecnitours/pages/galeria.html">Galería</a>
-                        <a href="/tecnitours/pages/blog.html">Blog</a>
-                        <a href="/tecnitours/pages/faq.html">FAQ</a>
+                        <a href="pages/galeria.html">Galería</a>
+                        <a href="pages/blog.html">Blog</a>
+                        <a href="pages/faq.html">FAQ</a>
                     </div>
                 </li>
-                <li><a href="/tecnitours/pages/contacto.html">Contacto</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
             </ul>
-            
+
         </nav>
     </header>
 
     <main>
         <!-- SOLO DE PRUEBA -->
-        <!-- <section class="hero-panel">
+        <section class="hero-panel">
             <picture>
                 <source srcset="https://picsum.photos/id/12/1200/720" media="(min-width:1024px)">
                 <source srcset="https://picsum.photos/id/12/1024/620" media="(min-width:720px)">
                 <img src="https://picsum.photos/id/12/480/480" alt="Vista panorámica de destino turístico">
             </picture>
-        </section> -->
+        </section>
     </main>
 
     <footer>
         <span>&copy; Tecnitours S. de R.L. 2024</span>
         <div class="redesSociales">
-            <a href="https://www.instagram.com/tecnitours?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
-            <a href="#" >WhatsApp</a>
+            <a href="https://www.instagram.com/tecnitours?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank">Instagram</a>
+            <a href="#">WhatsApp</a>
         </div>
     </footer>
+    <script src="js/loader.js"></script>
 </body>
+
 </html>
