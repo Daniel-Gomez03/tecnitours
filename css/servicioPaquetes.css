@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+.Precios {
+    padding:0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    border: 1px solid #000;
+    width: 300px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 13px;
+}
+.card img {
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center center;
+}
+.card h3, .card ul li {
+    margin:0px;
+    color: #333;
+    padding:0.5rem;
+}
+.card ul li{
+    font-size: 0.8rem;
+}
+.card a{
+    display: block;
+    text-decoration: none;
+    padding: 0.75rem 0.5rem;
+    text-align: center;
+    background-color: 	#3d80bb;
+    color: #333;
+    font-weight: bold;
+}
+
+.card .precio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 78px;
+    height: 100px;
+    border-radius: 50%;
+    top: 178px;
+    right:1rem;
+    background-color:#8bc8fe;
+    transform: translateY(-50%);
+    font-weight: bold;
+    box-shadow: 1px 1px 10px #437ceef3;
+}
+
+
+@media (min-width: 720px) {
+    .Precios{
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 23rem;
+    }
+    .card {
+        position: relative;
+        overflow: hidden;
+    }
+}
