@@ -1,0 +1,131 @@
+.slider {
+    position:relative;
+    width:100vw;
+    height:80vh;
+    overflow: hidden;
+}
+
+.slider .framestrack{
+    position:relative;
+    top:0px;
+    left:0px;
+    height:80vh;
+    display: flex;
+    flex-direction: row;
+    transition: left 0.5s ease-in-out;
+}
+
+.slider .framestrack .slide{
+    position:relative;
+    flex: 0 0 100%;
+    width:100vw;
+    height:80vh;
+}
+
+.slider .framestrack .slide img{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:80vh;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.slider  .slide .action{
+    position: absolute;
+    max-width:380px;
+    padding:2rem;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 17px;
+    box-shadow: 3px 3px 5px #000;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider .btnLeft, .slider .btnRight{
+    position: absolute;
+    display: flex;
+    font-size:2rem;
+    font-weight: bold;
+    padding:1rem;
+    z-index: 1010;
+    top:50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    transition: box-shadow 0.5s;
+}
+.slider .btnLeft{
+    left:0px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding-left: 15px;
+}
+.slider .btnRight{
+    right:0px;
+    padding-right: 25px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+}
+
+.slider .btnLeft:hover, .slider .btnRight:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.slider .navigator {
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    padding:0.5rem 1rem;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    gap:0.5rem;
+    justify-content: center;
+    align-items: center;
+    z-index:1010;
+}
+
+/* Contenedor de la galería */
+.gallery-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.gallery-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Diseño de la galería */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
