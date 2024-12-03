@@ -7,7 +7,9 @@
 }
 
 body {
+    position: relative;
     font-family: 'Montserrat', Arial, sans-serif;
+    padding-bottom: 50px;
     color: #efeced;
 }
 
@@ -258,19 +260,19 @@ header nav ul li a:hover {
 
 /* Footer IGUAL EN TODAS LAS PÁGINAS*/
 footer {
+    position: absolute;   
+    bottom: 0;        
+    left: 0;           
+    right: 0;          
+    width: 100%;       
     background-color: #1f67a8;
-    padding: 2rem 1rem;
+    padding: 0.4rem;
     text-align: center;
     font-size: 0.875rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 100;
+    z-index: 100;      
 }
 
 footer span {
@@ -303,7 +305,7 @@ footer span {
 }
 
 /* Media Queries - Tablets */
-@media (min-width:720px) {
+@media (min-width:720px) {    
     .brand {
         display: flex;
         align-items: center;
@@ -325,6 +327,16 @@ footer span {
     header nav {
         width: 20%; 
     }
+
+    footer {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .redesSociales a {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 /* Media Queries - Desktop */
@@ -344,11 +356,11 @@ footer span {
         display: flex;
         align-items: center;
         gap: 1rem;
-        padding: 0.5rem 2rem; 
+        padding: 0.5rem; 
     }
 
     .brand img {
-        height: 80px; 
+        height: 60px; 
         width: auto; 
     }
 
@@ -424,5 +436,15 @@ footer span {
     .linksMenu a:hover {
         background-color: #ee743b;
         color: #1f67a8;
+    }
+
+    footer {
+        padding: 0.3rem;
+        font-size:  1.1rem;
+    }
+
+    .redesSociales a {
+        width: 35px;
+        height: 35px;
     }
 }

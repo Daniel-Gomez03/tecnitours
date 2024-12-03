@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/inicio.css">
     <script src="js/menu-toggle.js"></script>
+    <script src="js/slider.js"></script>
     <title>Tecnitours - Tu Agencia de Viajes en Honduras</title>
 </head>
 
@@ -56,25 +58,214 @@
                 </li>
                 <li><a href="pages/contacto.html">Contacto</a></li>
             </ul>
-
         </nav>
     </header>
 
-    <!-- <main>
-        <section class="hero-panel">
+    <main>
+        <div class="image-container">
             <picture>
-                <source srcset="https://picsum.photos/id/12/1200/720" media="(min-width:1024px)">
-                <source srcset="https://picsum.photos/id/12/1024/620" media="(min-width:720px)">
-                <img src="https://picsum.photos/id/12/480/480" alt="Vista panorámica de destino turístico">
+                <source srcset="imgs/paisajes/paisaje-1(Desktop).jpg" media="(min-width: 1024px)">
+                <source srcset="imgs/paisajes/paisaje-3(Tablets).jpg" media="(min-width: 720px)">
+                <img src="imgs/paisajes/paisaje-2(movil).jpg" alt="Paisaje">
             </picture>
+            <div class="overlay-text">Un nuevo concepto en viajes</div>
+        </div>
+        <div class="destinos">
+            <div class="destino-titulo">
+                <h2>Destinos destacados desde Tegucigalpa</h2>
+            </div>
+            <div class="slider-container">
+                <div class="tarjetas">
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="imgs/paisajes/machu picchu.jpg" alt="Machu Pichu">
+                        </div>
+                        <div class="info">
+                            <h3>Machu Picchu, Perú</h3>
+                            <p> El país andino guarda en su territorio tantas joyas que sería imposible enumerarlas una
+                                a
+                                una.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="imgs/paisajes/petra.jpg" alt="Petra">
+                        </div>
+                        <div class="info">
+                            <h3>Petra, Jordania</h3>
+                            <p>Petra, uno de los lugares másturísticos del mundo, es una joya hecha ciudad</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="imgs/paisajes/chichen itza.JPG" alt="Chichen Itza">
+                        </div>
+                        <div class="info">
+                            <h3>Chichen Itzá, México</h3>
+                            <p>Uno de los sitios arqueológicos más famosos de la civilización maya, conocido por su
+                                pirámide
+                                principal, El Castillo. </p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="imgs/paisajes/acropolis.jpg" alt="Acropolis">
+                        </div>
+                        <div class="info">
+                            <h3>La Acrópolis, Grecia</h3>
+                            <p>Una antigua ciudadela situada en una colina en Atenas. Alberga el Partenón, un templo
+                                dedicado a la diosa Atenea. </p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="imgs/paisajes/piramides giza.jpg" alt="Piramides de Giza">
+                        </div>
+                        <div class="info">
+                            <h3>Las Pirámides de Giza, Egipto</h3>
+                            <p>Monumentos icónicos de la antigua civilización egipcia. Incluyen la Gran Pirámide de
+                                Keops y la Esfinge</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="imgs/paisajes/taj mahal.jpeg" alt="Taj Mahal">
+                        </div>
+                        <div class="info">
+                            <h3>El Taj Mahal, India</h3>
+                            <p>Una majestuosa obra de arquitectura mogol construida como mausoleo en honor a Mumtaz
+                                Mahal,
+                                la esposa del emperador Shah Jahan.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="imgs/paisajes/torre eiffel.jpg" alt="Torre Eiffel">
+                        </div>
+                        <div class="info">
+                            <h3>La Torre Eiffel, Francia</h3>
+                            <p>Un ícono mundial de París y Francia. Esta torre de hierro, diseñada por Gustave Eiffel.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="imgs/paisajes/la alhambra.jpg" alt="Alhambra">
+                        </div>
+                        <div class="info">
+                            <h3>La Alhambra, España</h3>
+                            <p>Un conjunto de palacios, fortalezas y jardines ubicado en Granada.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="imgs/paisajes/coliseo.jpg" alt="Coliseo">
+                        </div>
+                        <div class="info">
+                            <h3>Coliseo, Italia</h3>
+                            <p>Un anfiteatro en Roma donde se celebraban espectáculos de gladiadores y eventos públicos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="imgs/paisajes/time square.jpg" alt="Times Square">
+                        </div>
+                        <div class="info">
+                            <h3>Times Square, Estados Unidos</h3>
+                            <p>Una intersección vibrante en Nueva York, conocida como "la encrucijada del mundo".</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="imgs/paisajes/stonehenge.jpg" alt="Stonehenge">
+                        </div>
+                        <div class="info">
+                            <h3>Stonehenge, Reino Unido</h3>
+                            <p>Un misterioso círculo de piedras prehistóricas en Inglaterra. Se cree que fue utilizado
+                                para
+                                rituales religiosos</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="imgs/paisajes/cristo redentor.jpg" alt="Cristo Redentor">
+                        </div>
+                        <div class="info">
+                            <h3>Cristo Redentor, Brasil</h3>
+                            <p>Una gigantesca estatua de Jesús en la cima del Cerro del Corcovado en Río de Janeiro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="prev">&#9664;</button>
+            <button class="next">&#9654;</button>
+        </div>
+        <section class="conoce-mas">
+            <h2>Conoce más sobre nosotros</h2>
+            <p>Descubre quiénes somos y lo que hacemos para ofrecerte la mejor experiencia de viaje.</p>
+            <div class="imagenes-boton">
+                <div class="imagen-boton">
+                    <a href="pages/about.html">
+                        <img src="imgs/paisajes/nosotros.jpg" alt="Sobre Nosotros">
+                    </a>
+                    <p>Sobre Nosotros</p>
+                </div>
+                <div class="imagen-boton">
+                    <a href="pages/blog.html">
+                        <img src="imgs/paisajes/blog.jpg" alt="Blog">
+                    </a>
+                    <p>Blog</p>
+                </div>
+                <div class="imagen-boton">
+                    <a href="pages/contacto.html">
+                        <img src="imgs/paisajes/contacto.jpg" alt="Contacto">
+                    </a>
+                    <p>Constacto</p>
+                </div>
+            </div>
         </section>
-    </main> -->
+        <section class="ofertas-destacadas">
+            <h2>Ofertas Destacadas</h2>
+            <div class="ofertas">
+                <div class="oferta">
+                    <img src="imgs/paisajes/cancun.jpg" alt="Cancún">
+                    <div class="info">
+                        <h3>Escapada de Lujo en Cancún</h3>
+                        <p>Disfruta de una estancia de 5 noches en uno de los mejores resorts de Cancún. Incluye todo
+                            incluido: alimentos, bebidas y acceso a las mejores actividades de playa y entretenimiento
+                            nocturno. ¡Perfecto para una escapada romántica o en familia!</p>
+                        <a href="pages/servicioHoteles.html" class="btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="oferta">
+                    <img src="imgs/paisajes/avion.jpg" alt="Vuelo a Europa">
+                    <div class="info">
+                        <h3>Vuelos Directos a Europa</h3>
+                        <p>Aprovecha esta oferta exclusiva para volar directo a Europa desde Tegucigalpa con tarifas
+                            especiales. Disfruta de una experiencia de vuelo cómoda y segura, ¡y comienza tu aventura
+                            por ciudades como Madrid, París y Roma!</p>
+                        <a href="pages/servicioVuelos.html" class="btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="oferta">
+                    <img src="imgs/paisajes/crucero.jpg" alt="Crucero por el Caribe">
+                    <div class="info">
+                        <h3>Crucero por el Caribe: 2x1 en boletos</h3>
+                        <p>Vive la experiencia de un exclusivo crucero por el Caribe. Disfruta de 7 días a bordo de un
+                            lujoso barco, visitando destinos paradisíacos, con todo incluido: entretenimiento,
+                            restaurantes y actividades para todos los gustos.</p>
+                        <a href="pages/servicioPaquetes.html" class="btn">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <span>&copy; Tecnitours S. de R.L. 2024</span>
         <div class="redesSociales">
-            <a href="https://www.facebook.com/p/Tecnitours-100063662585869/"
-                target="_blank" aria-label="Facebook">
+            <a href="https://www.facebook.com/p/Tecnitours-100063662585869/" target="_blank" aria-label="Facebook">
                 <img src="imgs/icons/facebook.png" alt="Facebook">
             </a>
             <a href="https://www.instagram.com/tecnitours?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
