@@ -1,62 +1,139 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <script src="/js/menu-toggle.js"></script>
     <title>Sobre Nosotros</title>
 </head>
 
 <body>
+    <div id="loader">
+        <p class="company-name">
+            <span>T</span><span>e</span><span>c</span><span>n</span><span>i</span><span>t</span><span>o</span><span>u</span><span>r</span><span>s</span>
+        </p>
+        <div class="earth-container">
+            <img src="/imgs/icons/planeta-tierra.png" alt="Planeta Tierra" class="earth">
+            <div class="orbit">
+                <img src="/imgs/icons/avion.png" alt="avion" class="plane">
+            </div>
+        </div>
+    </div>
     <header>
         <div class="brand">
-            <img src="../imgs/logo/logo-tecnitours.png" alt="Logo Tecnitours">
+            <picture>
+                <source src="/imgs/logo/logo-Tecnitour(Desktop).png" media="(min-width: 1024px)">
+                <source src="/imgs/logo/Logo-Tecnitour(tablet).png" media="(min-width: 720px)">
+                <img src="/imgs/logo/Logo-Tecnitour(movil).png" alt="Logo de la empresa">
+            </picture>
             <h1>Tecnitours</h1>
         </div>
+        <button class="menu-toggle" aria-label="Abrir menu">
+            &#9776;
+        </button>
         <nav>
             <ul>
-                <li><a href="/tecnitours/index.html">Inicio</a></li>
-                <li><a href="/tecnitours/pages/about.html">Nosotros</a></li>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pages/about.html">Nosotros</a></li>
                 <li class="menuDesplegable">
                     <button class="menubtn">Servicios</button>
                     <div class="linksMenu">
-                        <a href="/tecnitours/pages/servicioGenerales.html">Generales</a>
-                        <a href="/tecnitours/pages/servicioHoteles.html">Hoteles</a>
-                        <a href="/tecnitours/pages/servicioVuelos.html">Vuelos</a>
-                        <a href="/tecnitours/pages/servicioPaquetes.html">Paquetes</a>
+                        <a href="/pages/servicioGenerales.html">Generales</a>
+                        <a href="/pages/servicioHoteles.html">Hoteles</a>
+                        <a href="/pages/servicioVuelos.html">Vuelos</a>
+                        <a href="/pages/servicioPaquetes.html">Paquetes</a>
                     </div>
                 </li>
                 <li class="menuDesplegable">
                     <button class="menubtn">Explorar</button>
                     <div class="linksMenu">
-                        <a href="/tecnitours/pages/galeria.html">Galería</a>
-                        <a href="/tecnitours/pages/blog.html">Blog</a>
-                        <a href="/tecnitours/pages/faq.html">FAQ</a>
+                        <a href="/pages/galeria.html">Galería</a>
+                        <a href="/pages/blog.html">Blog</a>
+                        <a href="/pages/faq.html">FAQ</a>
                     </div>
                 </li>
-                <li><a href="/tecnitours/pages/contacto.html">Contacto</a></li>
+                <li><a href="/pages/contacto.html">Contacto</a></li>
             </ul>
-            
         </nav>
     </header>
 
     <main>
-        <!-- SOLO DE PRUEBA -->
-        <!-- <section class="hero-panel">
+        <div class="image-container">
             <picture>
-                <source srcset="https://picsum.photos/id/12/1200/720" media="(min-width:1024px)">
-                <source srcset="https://picsum.photos/id/12/1024/620" media="(min-width:720px)">
-                <img src="https://picsum.photos/id/12/480/480" alt="Vista panorámica de destino turístico">
+                <source srcset="/imgs/paisajes/paisaje-1(Desktop).jpg" media="(min-width: 1024px)">
+                <source srcset="/imgs/paisajes/paisaje-3(Tablets).jpg" media="(min-width: 720px)">
+                <img src="/imgs/paisajes/paisaje-2(movil).jpg" alt="Paisaje">
             </picture>
-        </section> -->
+            <div class="overlay-text">Acerca de Nosotros</div>
+        </div>
+
+        <section id="descripcion">
+            <h2>Descripción de la Empresa</h2>
+            <p>
+                Tecnitours es una empresa que se enfoca en brindar asesoramiento y cotización para la planificación de
+                viajes. Su enfoque principal es proporcionar soluciones a medida para sus clientes, garantizando
+                experiencias de viaje satisfactorias y únicas. La empresa se dedica a ofrecer un servicio de excelencia
+                que satisfaga las expectativas y requerimientos de cada cliente.
+            </p>
+        </section>
+
+        <section id="historia">
+            <h2>Historia</h2>
+            <p>
+                Tecnitours es una empresa familiar que nació en Tegucigalpa en el año 2003 y mantuvo operaciones hasta
+                el año 2010. En el año 2015 se apertura hasta la actualidad. Su principal función es dar a conocer a
+                nivel nacional e internacional los recursos turísticos con los que cuenta la república de Honduras.
+            </p>
+        </section>
+
+        <section id="mision">
+            <h2>Misión</h2>
+            <p>
+                Brindar un servicio especializado y personalizado enfocado en la satisfacción de nuestros clientes,
+                dando asesoría antes, durante y después del viaje, asistiendo de manera profesional a todos aquellos que
+                necesitan un servicio de viaje con respuestas rápidas y eficientes.
+            </p>
+        </section>
+
+        <section id="vision">
+            <h2>Visión</h2>
+            <p>
+                Ser reconocida como una empresa turística consolidada y responsable en brindar servicios de calidad a
+                nivel nacional y regional.
+            </p>
+        </section>
+
+        <section id="valores">
+            <h2>Valores</h2>
+            <ul>
+                <li>Honestidad</li>
+                <li>Trabajo en equipo</li>
+                <li>Respeto</li>
+                <li>Responsabilidad</li>
+                <li>Profesionalismo</li>
+                <li>Transparencia</li>
+                <li>Compromiso</li>
+                <li>Importancia del cliente</li>
+            </ul>
+        </section>
     </main>
 
     <footer>
         <span>&copy; Tecnitours S. de R.L. 2024</span>
         <div class="redesSociales">
-            <a href="https://www.instagram.com/tecnitours?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
-            <a href="#" >WhatsApp</a>
+            <a href="https://www.facebook.com/p/Tecnitours-100063662585869/" target="_blank" aria-label="Facebook">
+                <img src="/imgs/icons/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/tecnitours?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank" aria-label="Instagram">
+                <img src="/imgs/icons/instagram.png" alt="Instagram">
+            </a>
         </div>
     </footer>
 </body>
+<script src="/js/loader.js"></script>
+
 </html>

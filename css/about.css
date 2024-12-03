@@ -1,0 +1,130 @@
+main {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.image-container {
+    margin-bottom: 2rem;
+    position: relative;
+    width: 100%;
+}
+
+.image-container picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    z-index: 1;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.5rem;
+    color: #1f67a8;
+    text-align: center;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+section#valores ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#valores li {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+section#valores li:last-child {
+    border-bottom: none;
+}
+
+@media (min-width: 720px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .image-container {
+        margin-bottom: -0.5rem;
+    }
+
+    .overlay-text {
+        font-size: 2rem; 
+    }
+
+    section {
+        margin-bottom: 1rem;
+        padding: 2rem;
+        max-width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section h2 {
+        margin-bottom: 0.5rem;
+        font-size: 1.8rem;
+    }
+
+    section p,
+    section#valores li {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    section {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    .image-container {
+        margin-bottom: 0.5rem;
+    }
+
+    .overlay-text {
+        font-size: 2.5rem; 
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); 
+    }
+
+    section {
+        max-width: 25%; 
+        flex: 1 1 calc(33% - 5rem); 
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p,
+    section#valores li {
+        font-size: 1.2rem;
+    }
+}
