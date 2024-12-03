@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #1f67a8;
+    color: #efeced;
+}
+
+/* Header y Navegación - Mobile First IGUAL EN TODAS LAS PÁGINAS*/
+header {
+    background-color: #1f67a8;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+}
+/*Logo IGUAL EN TODAS LAS PÁGINAS*/
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;    
+}
+
+.brand img {
+    height: 40px;
+    width: auto;
+    margin-left: 1rem;
+    
+}
+
+header h1 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 0px;
+    padding: 0.5rem 1rem;
+    
+}
+
+/* Navegación principal IGUAL EN TODAS LAS PÁGINAS */
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: #efeced;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(239, 236, 237, 0.1);
+    
+}
+
+header nav ul li a:hover {
+    background-color: #ee743b;
+    color: #efeced;
+}
+
+/* Menú desplegable IGUAL EN TODAS LAS PÁGINAS*/
+.menuDesplegable {
+    position: relative;
+}
+
+.menuDesplegable .menubtn {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color: #efeced;
+    padding: 0.75rem 1rem;
+    background-color: transparent;
+    font-family: 'Montserrat', Arial, sans-serif;
+    text-align: left;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(239, 236, 237, 0.1);
+}
+
+.menuDesplegable .menubtn:hover {
+    background-color: #ee743b;
+}
+
+.linksMenu {
+    display: none;
+    background-color: #efeced;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.linksMenu a {
+    color: #333 ;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid rgba(31, 103, 168, 0.1);
+}
+
+.linksMenu a:hover {
+    background-color: #ee743b;
+    color: #efeced ;
+}
+
+.menuDesplegable:hover .linksMenu {
+    display: block;
+}
+
+/*Contenido Principal de Sección Vuelo*/
+
+.hero-panel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.hero-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.hero-panel div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333 ;
+}
+
+.hero-panel div h2{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.hero-panel div p{
+    font-size: 10px;
+    font-weight: 350;
+    margin-bottom: 25px;
+    color: black;
+}
+
+.busqueda-vuelos{
+    background-color: #efeced;
+    margin-bottom: 50px;
+}
+
+.busqueda-vuelos h2{
+    color:#1f67a8;
+    margin-left: 15px;
+    font-size: 25px;
+    margin-top: 1.5px;
+}
+
+/*Formulario de Vuelo*/
+.container {
+    padding-inline: 15px;
+    color: #333;
+    font-weight: bold;
+    background-color: #efeced;
+}
+
+.form_busquedaVuelo {
+    display: flex;
+    gap: 15px; 
+    justify-content: space-between; 
+    margin-top: 25px;
+    flex-wrap: wrap; 
+}
+
+.input-wrapper {
+    flex: 1 1 45%; 
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 25px; 
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.boton{
+    display: flex;
+    align-self: center;
+    padding: 1rem 2rem;
+    background-color: #e5222a;
+    color: #fff;
+    text-decoration: none;
+    margin: 0.5rem auto;
+    box-shadow: 3px 3px 5px #000;
+    border-radius: 48px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.boton:hover {
+    background-color: #ee743b;
+}
+
+.form_busquedaVuelo button{
+    margin-top: 3%;
+}
+
+input:invalid, select:invalid{
+    border: 2px solid #e5222a;
+}
+
+input:valid, select:valid{
+    border: 2px solid #1f67a8;
+}
+
+/*Sección Destinos Populares*/
+.destinosP{
+    padding:0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.destinosP .container{
+    background-color: #1f67a8;
+    text-align: center;
+}
+
+.destinosP .container p{
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 4px
+}
+
+.desc{
+    color: #efeced;
+}
+
+.destinosP .container h3{
+    color: #efecede0;
+    font-weight: lighter;
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+.destinosP .container h2{
+    color: #efeced;
+    font-size: 25px;
+}
+
+
+/* Contenedor de la lista de destinos */
+.Lista_destinos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.popular-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 300px; 
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popular-card .card_img img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.popular-card .card_content {
+    padding: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: left;
+}
+
+/* Estrellas de calificación */
+.popular-card .card_rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 85px;
+    height: 54px;
+    border-radius: 15%;
+    top: 185px;
+    right:1rem;
+    background-color: #1f67a8;
+    transform: translateY(-50%);
+    font-weight: bold;
+    box-shadow: 1px 1px 10px #154a77;
+    color: #efeced
+}
+
+.Lista_destinos .card_content h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #333333;
+}
+
+.popular-card p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+.popular-card a {
+    color: #1f67a8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Sección de Paquetes de Vuelo*/
+.paquete {
+    padding-block: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #efeced; 
+}
+
+.H3Paquete{
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.paquete h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #1f67a8;
+}
+
+.paquete p{
+    font-weight: lighter;
+}
+
+.info{
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+
+.lista_paquetes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.lista_paquetes > li {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.paquete-card {
+    flex: 1;
+}
+
+.paquete-card .paqueteIMG img {
+    order: 1;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card_content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.card_content h3 {
+    font-size: 20px;
+    color: #1f67a8;
+}
+
+.card_content p {
+    color: #333;
+    order: 2;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.precio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #1f67a8;
+    color: #efeced;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    order: 3;
+    margin-top: 10px;
+}
+
+.precio .fondo-precio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.precio .fondo-precio p {
+    font-size: 14px;
+}
+
+.card_rating {
+    font-size: 14px;
+    color: #efeced;
+}
+
+.precio p {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.precio p span {
+    font-size: 14px;
+    display: block;
+}
+
+.container button{
+    margin-top: 3%;
+}
+
+/* Footer IGUAL EN TODAS LAS PÁGINAS*/
+footer {
+    background-color: #1f67a8;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.redesSociales {
+    margin-top: 1rem;
+}
+
+.redesSociales a {
+    color: #efeced;
+    margin: 0.5rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.redesSociales a:hover {
+    color: #ee743b;
+    background-color:#efeced ;
+}
+
+@media (min-width: 720px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        z-index: 900;
+    }
+
+    header h1 {
+        padding: 0.5rem 0;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    header nav ul li a {
+        border-bottom: none;
+    }
+
+    .menuDesplegable .menubtn {
+        border-bottom: none;
+    }
+
+    .linksMenu {
+        position: absolute;
+        width: 200px;
+        top: 100%;
+        left: 0;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .redesSociales {
+        margin-top: 0;
+    }
+
+    .hero-panel div h2{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .hero-panel div p{
+        font-size: 13px;
+    }
+
+    .Reservacion-vuelos {
+        margin: 20px;
+    }
+}
+
+/* Media Queries - Desktop */
+@media (min-width: 1024px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .redesSociales a {
+        margin: 0 1rem;
+    }
+
+    .hero-panel div h2{
+        font-size: 30px;
+    }
+
+    .hero-panel div p{
+        font-size: 17px;
+    }
+
+    .Reservacion-vuelos {
+        padding: 30px;
+    }
+
+    .lista_paquetes > li {
+        flex-direction: row;
+    }
+}
