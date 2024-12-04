@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <base href="https://daniel-gomez03.github.io/tecnitours/"> -->
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/blog.css">
     <title>Blog</title>
 </head>
 
@@ -36,27 +39,127 @@
                 </li>
                 <li><a href="/tecnitours/pages/contacto.html">Contacto</a></li>
             </ul>
-            
+
         </nav>
     </header>
 
-    <main>
-        <!-- SOLO DE PRUEBA -->
-        <!-- <section class="hero-panel">
+    <main class="blog-page">
+        <section class="hero">
             <picture>
-                <source srcset="https://picsum.photos/id/12/1200/720" media="(min-width:1024px)">
-                <source srcset="https://picsum.photos/id/12/1024/620" media="(min-width:720px)">
-                <img src="https://picsum.photos/id/12/480/480" alt="Vista panorámica de destino turístico">
+                <source srcset="../imgs/blog-hero.jpg" media="(min-width: 1024px)">
+                <source srcset="../imgs/blog-hero.jpg" media="(min-width: 720px)">
+                <img src="../imgs/blog-hero.jpg" alt="Blog de Viajes - Tecnitours">
             </picture>
-        </section> -->
+            <div class="hero-content">
+                <h1>Blog de Viajes</h1>
+                <p>Descubre destinos, consejos y experiencias únicas</p>
+            </div>
+        </section>
+
+        <section class="blog-contenedor">
+            <div class="blog-estructura">
+                <section class="blog">
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <picture>
+                                <source srcset="../imgs/blog/articulo1.jpg" media="(min-width: 1024px)">
+                                <source srcset="../imgs/blog/articulo1.jpg" media="(min-width: 720px)">
+                                <img src="../imgs/blog/articulo1.jpg" alt="Roatán: Un paraíso en el Caribe">
+                            </picture>
+                        </div>
+                        <div class="post-contenido">
+                            <div class="post-data">
+                                <span class="post-categoria">Destinos</span>
+                                <span class="post-fecha">15 de Noviembre, 2024</span>
+                            </div>
+                            <h2 class="post-titulo">Roatán: Un paraíso en el Caribe</h2>
+                            <p class="post-descripcion">Descubre por qué Roatán es considerada una de las mejores islas del
+                                Caribe, con sus playas cristalinas, arrecifes de coral y una rica cultura local...</p>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <picture>
+                                <source srcset="../imgs/blog/articulo2.jpg" media="(min-width: 1024px)">
+                                <source srcset="../imgs/blog/articulo2.jpg" media="(min-width: 720px)">
+                                <img src="../imgs/blog/articulo2.jpg" alt="copán Ruinas">
+                            </picture>
+                        </div>
+                        <div class="post-contenido">
+                            <div class="post-data">
+                                <span class="post-categoria">Historia</span>
+                                <span class="post-fecha">10 de Noviembre, 2024</span>
+                            </div>
+                            <h3 class="post-titulo">Guía Completa: Copán Ruinas</h3>
+                            <p class="post-descripcion">Explora la majestuosidad de las ruinas mayas en Copán, un sitio
+                                UNESCO que te transportará al pasado...</p>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <picture>
+                                <source srcset="../imgs/blog/articulo3.jpg" media="(min-width: 1024px)">
+                                <source srcset="../imgs/blog/articulo3.jpg" media="(min-width: 720px)">
+                                <img src="../imgs/blog/articulo3.jpg" alt="Tips de Viaje">
+                            </picture>
+                        </div>
+                        <div class="post-contenido">
+                            <div class="post-data">
+                                <span class="post-categoria">Consejos</span>
+                                <span class="post-fecha">5 de Noviembre, 2024</span>
+                            </div>
+                            <h3 class="post-titulo">10 Tips Imprescindibles para tu Viaje</h3>
+                            <p class="post-descripcion">Prepárate para tu próxima aventura con estos consejos prácticos que
+                                todo viajero debe conocer...</p>
+                        </div>
+                    </article>
+                </section>
+
+                <aside class="blog-sidebar">
+                    <div class="sidebar-categorias">
+                        <h3 class="categoria-titulo">Categorías</h3>
+                        <div class="etiquetas">
+                            <a href="#" class="tag">Destinos</a>
+                            <a href="#" class="tag">Consejos de Viaje</a>
+                            <a href="#" class="tag">Gastronomía</a>
+                            <a href="#" class="tag">Cultura</a>
+                            <a href="#" class="tag">Aventura</a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-entradas-recientes">
+                        <h3 class="entradas-titulo">Entradas Recientes</h3>
+                        <ul>
+                            <li><a href="#">10 Destinos Imperdibles en 2024</a></li>
+                            <li><a href="#">Consejos para Viajeros Mochileros</a></li>
+                            <li><a href="#">La Mejor Gastronomía de Sudamérica</a></li>
+                            <li><a href="#">Guía Definitiva de Viaje Económico</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-redes-sociales">
+                        <h3 class="redes-titulo">Síguenos en nuestras Redes Sociales</h3>
+                        <div class="iconos-redes">
+                            <a href="#" class="red-social">Instagram</a>
+                            <a href="#" class="red-social">Facebook</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+        </section>
     </main>
+
 
     <footer>
         <span>&copy; Tecnitours S. de R.L. 2024</span>
         <div class="redesSociales">
-            <a href="https://www.instagram.com/tecnitours?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
-            <a href="#" >WhatsApp</a>
+            <a href="https://www.instagram.com/tecnitours" target="_blank">Instagram</a>
+            <a href="#">WhatsApp</a>
         </div>
     </footer>
 </body>
+
 </html>
