@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/estilos.css">
-    <link rel="stylesheet" href="/css/about.css">
-    <script src="/js/menu-toggle.js"></script>
-    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="/css/servicioAutos.css">
+    <script src="../js/menu-toggle.js"></script>
+    <script src="../js/slider2.js"></script>
+    <title>Servicios Autos</title>
 </head>
 
 <body>
@@ -61,62 +62,46 @@
     </header>
 
     <main>
-        <div class="image-container">
-            <picture>
-                <source srcset="/imgs/paisajes/paisaje-1(Desktop).jpg" media="(min-width: 1024px)">
-                <source srcset="/imgs/paisajes/paisaje-3(Tablets).jpg" media="(min-width: 720px)">
-                <img src="/imgs/paisajes/paisaje-2(movil).jpg" alt="Paisaje">
-            </picture>
-            <div class="overlay-text">Acerca de Nosotros</div>
+        <div class="slider">
+            <div class="framestrack">
+            <div class="slide"><img src="/imgs/paisajes/cataratas.jpg" alt="Imagen 1"></div>
+            <div class="slide"><img src="/imgs/paisajes/nueva-york.jpg" alt="Imagen 2"></div>
+            <div class="slide"><img src="/imgs/paisajes/islas.jpg" alt="Imagen 3"></div>
+            </div>
         </div>
-
-        <section id="descripcion">
-            <h2>Descripción de la Empresa</h2>
-            <p>
-                Tecnitours es una empresa que se enfoca en brindar asesoramiento y cotización para la planificación de
-                viajes. Su enfoque principal es proporcionar soluciones a medida para sus clientes, garantizando
-                experiencias de viaje satisfactorias y únicas. La empresa se dedica a ofrecer un servicio de excelencia
-                que satisfaga las expectativas y requerimientos de cada cliente.
-            </p>
+        <section class="description">
+            <h2>Alquila tu Auto con Nosotros</h2>
+            <p>Ofrecemos una amplia gama de vehículos adaptados a tus necesidades. Ya sea para viajes largos o traslados cortos, contamos con opciones para todos los gustos y presupuestos.</p>
+            <p>Desde autos económicos hasta vehículos de lujo, ¡tenemos todo cubierto para que disfrutes de tu viaje con total comodidad!</p>
         </section>
 
-        <section id="historia">
-            <h2>Historia</h2>
-            <p>
-                Tecnitours es una empresa familiar que nació en Tegucigalpa en el año 2003 y mantuvo operaciones hasta
-                el año 2010. En el año 2015 se apertura hasta la actualidad. Su principal función es dar a conocer a
-                nivel nacional e internacional los recursos turísticos con los que cuenta la república de Honduras.
-            </p>
-        </section>
+        <section class="reservation-form">
+            <h2>Reserva tu Auto</h2>
+            <form action="/reserva" method="POST">
+                <label for="car-type">Tipo de Vehículo:</label>
+                <select id="car-type" name="car-type">
+                    <option value="economy">Económico</option>
+                    <option value="luxury">De lujo</option>
+                    <option value="suv">SUV</option>
+                    <option value="convertible">Convertible</option>
+                </select>
 
-        <section id="mision">
-            <h2>Misión</h2>
-            <p>
-                Brindar un servicio especializado y personalizado enfocado en la satisfacción de nuestros clientes,
-                dando asesoría antes, durante y después del viaje, asistiendo de manera profesional a todos aquellos que
-                necesitan un servicio de viaje con respuestas rápidas y eficientes.
-            </p>
-        </section>
+                <label for="pickup-date">Fecha de Recogida:</label>
+                <input type="date" id="pickup-date" name="pickup-date" required>
 
-        <section id="vision">
-            <h2>Visión</h2>
-            <p>
-                Ser reconocida como una empresa turística consolidada y responsable en brindar servicios de calidad a
-                nivel nacional y regional.
-            </p>
-        </section>
+                <label for="dropoff-date">Fecha de Devolución:</label>
+                <input type="date" id="dropoff-date" name="dropoff-date" required>
 
-        <section id="valores">
-            <h2>Valores</h2>
+                <button type="submit">Reservar Ahora</button>
+            </form>
+        </section>
+        <section class="benefits">
+            <h2>Beneficios de Alquilar con Nosotros</h2>
             <ul>
-                <li>Honestidad</li>
-                <li>Trabajo en equipo</li>
-                <li>Respeto</li>
-                <li>Responsabilidad</li>
-                <li>Profesionalismo</li>
-                <li>Transparencia</li>
-                <li>Compromiso</li>
-                <li>Importancia del cliente</li>
+                <li><strong>Variedad de Vehículos:</strong> Desde autos económicos hasta vehículos de lujo.</li>
+                <li><strong>Fácil Reserva:</strong> Reserva en línea de manera rápida y segura.</li>
+                <li><strong>Seguro Completo:</strong> Disfruta de un seguro completo durante tu alquiler.</li>
+                <li><strong>Atención al Cliente:</strong> Estamos disponibles para ayudarte 24/7.</li>
             </ul>
         </section>
     </main>
