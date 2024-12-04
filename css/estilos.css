@@ -199,8 +199,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: #ee743b;
-    color: #efeced;
+    background-color: #efeced;
+    color: #ee743b;
 }
 
 /* Menú desplegable IGUAL EN TODAS LAS PÁGINAS*/
@@ -250,8 +250,8 @@ header nav ul li a:hover {
 }
 
 .linksMenu a:hover {
-    background-color: #ee743b;
-    color: #efeced ;
+    background-color: #efeced;
+    color: #ee743b;
 }
 
 .menuDesplegable:hover .linksMenu {
@@ -434,8 +434,8 @@ footer span {
     }
 
     .linksMenu a:hover {
-        background-color: #ee743b;
-        color: #1f67a8;
+        background-color: #efeced;
+        color: #ee743b;
     }
 
     footer {
