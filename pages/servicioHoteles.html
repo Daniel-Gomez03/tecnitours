@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/servicioHoteles.css">
+    <script src="../js/servicioHoteles.js"></script>
     <title>Hoteles</title>
 </head>
 
@@ -41,14 +42,185 @@
     </header>
 
     <main>
-        <!-- SOLO DE PRUEBA -->
-        <!-- <section class="hero-panel">
-            <picture>
-                <source srcset="https://picsum.photos/id/12/1200/720" media="(min-width:1024px)">
-                <source srcset="https://picsum.photos/id/12/1024/620" media="(min-width:720px)">
-                <img src="https://picsum.photos/id/12/480/480" alt="Vista panorámica de destino turístico">
-            </picture>
-        </section> -->
+        <section class="hero-panel">
+            <img src="../imgs/sección-hoteles/Fondo.jpg" alt="Atardecer en la Playa">
+            <div class="content-left">
+                <h1>Encuentra tu estadía ideal</h1>
+                <p>Explora nuestra selección de hoteles cuidadosamente elegidos para brindarte comodidad y calidad en cada destino. 
+                Desde alojamientos acogedores hasta resorts de lujo, Tecnitours te conecta con opciones que se adaptan a tus necesidades y te acercan a vivir experiencias inolvidables. Haz de tu próximo viaje un recuerdo excepcional con la estadía perfecta.</p>
+                    <a href="#" class="btnContenido">Más Opciones</a>
+            </div>
+
+            <section class="main-slider">
+                <div class="framestrack">
+                    <div class="slide">
+                            <img src="../imgs/sección-hoteles/Hotel-Italia.jpg" alt="Hotel en Italia">
+                            <h1>Italia</h1>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../imgs/sección-hoteles/Hotel-CanadaVancouver.jpg" alt="Hotel en Canadá">
+                        <h1>Canadá</h1>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../imgs/sección-hoteles/Hotel-Suiza.png" alt="Hotel en Suiza">
+                        <h1>Suiza</h1>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../imgs/sección-hoteles/Hotel-USA.jpg" alt="Hotel en USA">
+                        <h1>Estados Unidos</h1>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../imgs/sección-hoteles/Hotel-JP.jpg" alt="Hotel en Japón">
+                        <h1>Japón</h1>
+                    </div>
+                </div>
+                    <!-- Botones de navegación -->
+                    <button class="btnLeft">‹</button>
+                    <button class="btnRight">›</button>
+            </section>
+        </section>
+
+        <section class="info-hospedaje">
+            <form action="servicioHoteles.html" id="formHospedaje">
+                <div class="form-group">
+                    <div class="input-group">
+                        <label for="destino">Destino</label>
+                        <input type="text" name="destino" id="destino" requeired placeholder="País, ciudad o región" pattern="[A-Za-z\´s]+" title="Solo se permiten letras y espacios"/>
+                    </div>
+                    <p>¿A dónde se dirige? </p>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <label for="fecha_ingreso">Fecha de Ingreso</label>
+                        <input type="date" name="fecha_ingreso" id="fecha_ingreso" required/>
+                    </div>
+                    <p>Ingrese la fecha</p>
+                </div>     
+                
+                <div class="form-group">
+                    <div class="input-group">
+                        <label for="fecha_salida">Fecha de Salida</label>
+                        <input type="date" name="fecha_salida" id="fecha_salida" required/>
+                    </div>
+                    <p>Ingrese la fecha</p>
+                </div> 
+                
+                <div class="form-group">
+                    <div class="input-group">
+                        <label for="cmbTipoHabitacion">Tipo de Habitación</label>
+                        <select id="cmbTipoHabitacion" name="cmbTipoHabitacion" required>
+                            <option value="1" selected>Sencilla</option>
+                            <option value="2">Doble</option> 
+                            <option value="3">Triple</option>
+                            <option value="4">Cuádruple</option>
+                            <option value="5">Quíntuplo</option>
+                            <option value="6">Sextuple</option>
+                        </select>
+                    </div>
+                    <p>Seleccione el tipo de habitación</p>
+                </div>  
+            </form>
+            <button class="btnForm" type="submit" form="formHospedaje">Buscar</button>
+        </section>
+
+        <h2>Hoteles Populares</h2>
+        <section class="popular-container">
+
+            <div class="card">
+                <button class="btnIzquierda">&lt;</button>
+                <div class="slider-wrapper">
+                    <div class="slider-track">
+                        <div class="hoteles slide"><img src="../imgs/sección-hoteles/Indura Beach.jpg" alt="Hotel Indura Beach"></div>
+                        <div class="hoteles slide"><img src="../imgs/sección-hoteles/Indura Beach3.jpg" alt="Hotel Indura Beach"></div>
+                        <div class="hoteles slide"><img src="../imgs/sección-hoteles/Indura Beach4.jpg" alt="Hotel Indura Beach"></div>
+                    </div>
+                </div>
+                <button class="btnDerecha">&gt;</button>
+                <h3>Indura Beach & Golf Resort</h3>
+                <p>Tela, Honduras</p>
+                <div class="precio">$575.00</div>
+            </div>
+
+            <div class="card">
+                <button class="btnIzquierda">&lt;</button>
+                <div class="slider-wrapper">
+                    <div class="slider-track">
+                        <div class="hoteles"><img src="../imgs/sección-hoteles/Hilton.jpg" alt="Hotel Hilton Vacation Club Grand"></div>
+                        <div class="hoteles"><img src="../imgs/sección-hoteles/Hilton2.jpg" alt="Hotel Hilton Vacation Club Grand"></div>
+                        <div class="hoteles"><img src="../imgs/sección-hoteles/Hilton3.jpg" alt="Hotel Hilton Vacation Club Grand"></div>
+                    </div>
+                </div>
+                <button class="btnDerecha">&gt;</button>
+                <h3>Hilton Vacation Club Grand</h3>
+                <p>Orlando, Estados Unidos</p>
+                <div class="precio">$348.00</div>
+            </div>
+
+            <div class="card">
+                <button class="btnIzquierda">&lt;</button>
+                <div class="slider-wrapper">
+                    <div class="slider-track">
+                        <div class="hoteles"><img src="../imgs/sección-hoteles/Palma Real.jpg" alt="Hotel Palma Real"></div>
+                        <div class="hoteles"><img src="../imgs/sección-hoteles/Palma Real 2.jpg" alt="Hotel Palma Real"></div>
+                        <div class="hoteles"><img src="../imgs/sección-hoteles/Palma Real3.jpg" alt="Hotel Palma Real"></div>
+                    </div>
+                </div>
+                <button class="btnDerecha">&gt;</button>
+                <h3>Palma Real</h3>
+                <p>La Ceiba, Honduras</p>
+                <div class="precio">$255.00</div>
+            </div>
+
+            <div class="card">
+                <button class="btnIzquierda">&lt;</button>
+                <div class="slider-wrapper">
+                    <div class="slider-track">
+                        <div class="hoteles"><img src="../imgs/sección-hoteles/SinaVille.jpg" alt="Hotel Sina De la Ville"></div>
+                        <div class="hoteles"><img src="../imgs/sección-hoteles/SinaVille2.jpg" alt="Hotel Sina De la Ville"></div>
+                        <div class="hoteles"><img src="../imgs/sección-hoteles/SinaVille3.jpg" alt="Hotel Sina De la Ville"></div>
+                    </div>
+                </div>
+                <button class="btnDerecha">&gt;</button>
+                <h3>Sina De la Ville</h3>
+                <p>Milán, Lombardía, Italia</p>
+                <div class="precio">$428.00</div>
+            </div>
+
+            <div class="card">
+                <button class="btnIzquierda">&lt;</button>
+                <div class="slider-wrapper">
+                    <div class="slider-track">
+                        <div class="hoteles"><img src="../imgs/sección-hoteles/Mandarin Oriental.jpg" alt="Hotel Mandarin Oriental"></div>
+                        <div class="hoteles"><img src="../imgs/sección-hoteles/Mandarin Oriental2.jpg" alt="Hotel Mandarin Oriental"></div>
+                        <div class="hoteles"><img src="../imgs/sección-hoteles/Mandarin Oriental3.jpg" alt="Hotel Mandarin Oriental"></div>
+                    </div>
+                </div>
+                <button class="btnDerecha">&gt;</button>
+                <h3>Mandarin Oriental</h3>
+                <p>Santiago, Chile</p>
+                <div class="precio">$399.00</div>
+            </div>
+
+            <div class="card">
+                <button class="btnIzquierda">&lt;</button>
+                <div class="slider-wrapper">
+                    <div class="slider-track">
+                        <div class="hoteles"><img src="../imgs/sección-hoteles/Hotel Camino Real Antigua.jpg" alt="Hotel Camino Real Antigua"></div>
+                        <div class="hoteles"><img src="../imgs/sección-hoteles/Hotel Camino Real Antigua2.jpg" alt="Hotel Camino Real Antigua"></div>
+                        <div class="hoteles"><img src="../imgs/sección-hoteles/Hotel Camino Real Antigua3.jpg" alt="Hotel Camino Real Antigua"></div>
+                    </div>
+                </div>
+                <button class="btnDerecha">&gt;</button>
+                <h3>Hotel Camino Real Antigua</h3>
+                <p>Antigua Guatemala, Sacatepéquez, Guatemala</p>
+                <div class="precio">$291.00</div>
+            </div>
+        </section>
     </main>
 
     <footer>

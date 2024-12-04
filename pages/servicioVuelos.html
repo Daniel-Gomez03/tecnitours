@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <title>Vuelos</title>
+    <link rel="stylesheet" href="../css/servicioVuelos.css">
+    <script src="../js/validacionVuelos.js"></script>
+    <title>Vuelos - Tecnitours</title>
 </head>
 
 <body>
@@ -40,15 +41,211 @@
         </nav>
     </header>
 
+    <!--Sección de Reserva de Vuelos-->
     <main>
-        <!-- SOLO DE PRUEBA -->
-        <!-- <section class="hero-panel">
+        <section class="hero-panel" id="inicio-vuelo">
             <picture>
-                <source srcset="https://picsum.photos/id/12/1200/720" media="(min-width:1024px)">
-                <source srcset="https://picsum.photos/id/12/1024/620" media="(min-width:720px)">
-                <img src="https://picsum.photos/id/12/480/480" alt="Vista panorámica de destino turístico">
+                <img src="../imgs/sección-vuelo/Paisaje.jpg" alt="Paisaje tropical">
             </picture>
-        </section> -->
+            <div>
+                <h2>Viaja para explorar el Mundo</h2>
+                <p>De la mano de Tecnitours, haz realidad tus sueños de aventura y descubre nuevos destinos alrededor del mundo. Con nuestras opciones de vuelos, 
+                    te llevamos a donde siempre has querido ir, brindándote seguridad, comodidad y atención personalizada en cada paso de tu viaje. Prepárate para volar y crear recuerdos inolvidables.</p>
+            </div>
+        </section>
+
+        <section class="busqueda-vuelos">
+            <h2>✈️Programa tu Vuelo</h2>
+            <div class="container">
+                <form action="servicioVuelos.html" class="form_busquedaVuelo" id="formVuelo">
+                    <div class="input-wrapper">
+                        <label for="origen" class="input-label">Desde</label>
+                        <input type="text" name="origen" id="origen" required placeholder="Ingrese Origen" class="input-field">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="destino" class="input-label">Hacia</label>
+                        <input type="text" name="destino" id="destino" required placeholder="Ingrese Destino"  class="input-field">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="personas" class="input-label">Número de Pasajeros</label>
+                        <input type="number" name="personas" id="personas" required placeholder="No. de personas" class="input-field">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="fecha_salida" class="input-label">Fecha de Salida</label>
+                        <input type="date" name="fecha_salida" id="fecha_salida" required class="input-field">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="fecha_retorno" class="input-label">Fecha de Retorno</label>
+                        <input type="date" name="fecha_retorno" id="fecha_retorno" required class="input-field">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="cmbTipoClase">Clase</label>
+                        <select id="cmbTipoClase" name="cmbTipoClase" required class="input-field">
+                            <option value="Eco" selected>Económica</option>
+                            <option value="Eje">Ejecutiva</option> 
+                            <option value="1Cla">Primera Clase</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="boton" form="formVuelo">Adquiera Ahora</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="destinosP">
+            <div class="container">
+                <h3>Descubre Lugares</h3>
+                <h2>Destinos Populares</h2>
+                <p class="desc">Explora los lugares que todos quieren visitar y déjate inspirar por la belleza de ciudades icónicas, 
+                paisajes espectaculares y culturas vibrantes. En Tecnitours, hemos seleccionado los destinos más populares para que comiences a planear tu próxima gran aventura.</p>
+
+                <ul class="Lista_destinos">
+                    <li>
+                        <div class="popular-card">
+                            <figure class="card_img">
+                                <img src="../imgs/sección-vuelo/París.jpg" alt="París, Francia" loading="lazy">
+                            </figure>
+
+                            <div class="card_content">
+                                <div class="card_rating">★★★★★</div>
+                                <p>
+                                    <a href="#">Francia</a>
+                                </p>
+                                <h3>París</h3>
+                                <p class="card_text">La Ciudad de la Luz te espera con su incomparable romanticismo, icónicos monumentos como la Torre Eiffel, el Louvre y sus encantadoras 
+                                calles llenas de historia y arte. Vive la magia de París y su exquisita gastronomía.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="popular-card">
+                            <figure class="card_img">
+                                <img src="../imgs/sección-vuelo/Orlando-Florida.jpg" alt="Orlando-Florida, Estados Unidos" loading="lazy">
+                            </figure>
+
+                            <div class="card_content">
+                                <div class="card_rating">★★★★★</div>
+                                <p>
+                                    <a href="#">Estados Unidos</a>
+                                </p>
+                                <h3>Orlando-Florida</h3>
+                                <p class="card_text">El corazón de la diversión en familia. Hogar de los parques temáticos más famosos del mundo, Orlando combina aventura, entretenimiento y 
+                                sol, ofreciendo experiencias únicas para todas las edades.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="popular-card">
+                            <figure class="card_img">
+                                <img src="../imgs/sección-vuelo/Venecia.jpg" alt="Venecia, Italia" loading="lazy">
+                            </figure>
+
+                            <div class="card_content">
+                                <div class="card_rating">★★★★★</div>
+                                <p>
+                                    <a href="#">Italia</a>
+                                </p>
+                                <h3>Venecia</h3>
+                                <p class="card_text">La ciudad flotante que parece sacada de un sueño. Recorre sus pintorescos canales en góndola, maravíllate con su arquitectura renacentista y 
+                                disfruta de la singular belleza de este destino lleno de historia y romance.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="boton">Más Destinos</button>
+            </div>
+        </section>
+
+        <section class="paquete">
+            <div class="container">
+                <h3 class="H3Paquete">Paquetes Sugeridos</h3>
+                <h2>Echa un vistazo a nuestros paquetes</h2>
+                <p class="info">En Tecnitours, hemos diseñado paquetes de vuelo que se adaptan a tus necesidades y sueños. Ya sea que busques una escapada corta, unas vacaciones familiares o una aventura 
+                internacional, nuestros paquetes ofrecen la mejor selección de vuelos a destinos increíbles con comodidad, flexibilidad y precios competitivos. ¡Elige tu destino y comienza a volar hoy mismo!</p>
+
+                <ul class="lista_paquetes">
+                    <li>
+                        <div class="paquete-card">
+                            <figure class="paqueteIMG">
+                                <img src="../imgs/servicios/paquete2.jpg" alt="Paquete Aérero Roatán" loading="lazy">
+                            </figure>
+                        </div>
+
+                        <div class="card_content">
+                            <h3>Escapada a la playa: 3 días y 2 noches de relax</h3>
+                            <p>Escápate a la tranquilidad del mar con nuestro paquete de 3 días y 2 noches en la playa. Disfruta de la brisa marina, relájate bajo el sol y recarga energías en un destino paradisíaco. 
+                            Ideal para desconectar de la rutina y vivir una experiencia inolvidable junto al océano.</p>
+                        </div>
+
+                        <div class="precio">
+                            <div class="fondo-precio">
+                                <p>(20 comentarios)</p>
+                                <div class="card_rating">★★★★★</div>
+                            </div>
+
+                            <p>$670 / $590<span>*por persona</span></p>
+                            <button class="boton">Reservar Ahora</button>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="paquete-card">
+                            <figure class="paqueteIMG">
+                                <img src="../imgs/servicios/paquete3.jpg" alt="Paquete del Casabe" loading="lazy">
+                            </figure>
+                        </div>
+
+                        <div class="card_content">
+                            <h3>Aventura en La Ceiba: 4 días y 3 noches de exploración</h3>
+                            <p>Descubre la magia de La Ceiba en nuestro paquete de 4 días y 3 noches. Rodeado de naturaleza exuberante, 
+                            desde sus playas hasta sus parques nacionales, vivirás una experiencia llena de aventura, cultura y relajación. Disfruta de actividades emocionantes y del encanto único de esta ciudad caribeña, ideal para los amantes de la naturaleza y los viajes llenos de descubrimientos.</p>
+                        </div>
+
+                        <div class="precio">
+                            <div class="fondo-precio">
+                                <p>(15 comentarios)</p>
+                                <div class="card_rating">★★★★☆</div>
+                            </div>
+
+                            <p>$345<span>*por persona</span></p>
+                            <button class="boton">Reservar Ahora</button>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="paquete-card">
+                            <figure class="paqueteIMG">
+                                <img src="../imgs/servicios/Paquete4.jpeg" alt="Paquete Disney" loading="lazy">
+                            </figure>
+                        </div>
+
+                        <div class="card_content">
+                            <h3>Magia en Disneyland</h3>
+                            <p>Descubre el mundo encantado de Disneyland California, donde la magia cobra vida. Vive la emoción de los parques temáticos, conoce a tus personajes 
+                            favoritos y disfruta de atracciones únicas que solo Disney puede ofrecer. Una experiencia mágica y llena de diversión para toda la familia, ideal para crear recuerdos que perdurarán toda la vida.</p>
+                        </div>
+
+                        <div class="precio">
+                            <div class="fondo-precio">
+                                <p>(35 comentarios)</p>
+                                <div class="card_rating">★★★★★</div>
+                            </div>
+
+                            <p>$759<span>*por persona</span></p>
+                            <button class="boton">Reservar Ahora</button>
+                        </div>
+                    </li>
+                </ul>
+
+                <button class="boton">Mirar todos los paquetes</button>
+            </div>
+        </section>
     </main>
 
     <footer>
