@@ -1,6 +1,7 @@
 .slider {
     position:relative;
     width:100vw;
+    padding-top: 5%;
     height:80vh;
     overflow: hidden;
 }
@@ -18,7 +19,7 @@
 .slider .framestrack .slide{
     position:relative;
     flex: 0 0 100%;
-    width:100vw;
+    width:80vw;
     height:80vh;
 }
 
