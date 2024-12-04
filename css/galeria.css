@@ -1,7 +1,6 @@
 .slider {
     position:relative;
     width:100vw;
-    padding-top: 5%;
     height:80vh;
     overflow: hidden;
 }
