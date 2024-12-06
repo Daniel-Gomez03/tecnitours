@@ -1,62 +1,222 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <base href="/tecnitours/">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <script src="js/menu-toggle.js"></script>
     <title>Preguntas Frecuentes</title>
 </head>
 
 <body>
+    <div id="loader">
+        <p class="company-name">
+            <span>T</span><span>e</span><span>c</span><span>n</span><span>i</span><span>t</span><span>o</span><span>u</span><span>r</span><span>s</span>
+        </p>
+        <div class="earth-container">
+            <img src="imgs/icons/planeta-tierra.png" alt="Planeta Tierra" class="earth">
+            <div class="orbit">
+                <img src="imgs/icons/avion.png" alt="avion" class="plane">
+            </div>
+        </div>
+    </div> 
     <header>
         <div class="brand">
-            <img src="../imgs/logo/logo-tecnitours.png" alt="Logo Tecnitours">
+            <picture>
+                <source src="imgs/logo/logo-Tecnitour(Desktop).png" media="(min-width: 1024px)">
+                <source src="imgs/logo/Logo-Tecnitour(tablet).png" media="(min-width: 720px)">
+                <img src="imgs/logo/Logo-Tecnitour(movil).png" alt="Logo de la empresa">
+            </picture>
             <h1>Tecnitours</h1>
         </div>
+        <button class="menu-toggle" aria-label="Abrir menu">
+            &#9776;
+        </button>
         <nav>
             <ul>
-                <li><a href="/tecnitours/index.html">Inicio</a></li>
-                <li><a href="/tecnitours/pages/about.html">Nosotros</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/about.html">Nosotros</a></li>
                 <li class="menuDesplegable">
                     <button class="menubtn">Servicios</button>
                     <div class="linksMenu">
-                        <a href="/tecnitours/pages/servicioGenerales.html">Generales</a>
-                        <a href="/tecnitours/pages/servicioHoteles.html">Hoteles</a>
-                        <a href="/tecnitours/pages/servicioVuelos.html">Vuelos</a>
-                        <a href="/tecnitours/pages/servicioPaquetes.html">Paquetes</a>
+                        <a href="pages/servicioAutos.html">Autos</a>
+                        <a href="pages/servicioHoteles.html">Hoteles</a>
+                        <a href="pages/servicioVuelos.html">Vuelos</a>
+                        <a href="pages/servicioPaquetes.html">Paquetes</a>
                     </div>
                 </li>
                 <li class="menuDesplegable">
                     <button class="menubtn">Explorar</button>
                     <div class="linksMenu">
-                        <a href="/tecnitours/pages/galeria.html">Galería</a>
-                        <a href="/tecnitours/pages/blog.html">Blog</a>
-                        <a href="/tecnitours/pages/faq.html">FAQ</a>
+                        <a href="pages/galeria.html">Galería</a>
+                        <a href="pages/blog.html">Blog</a>
+                        <a href="pages/faq.html">FAQ</a>
                     </div>
                 </li>
-                <li><a href="/tecnitours/pages/contacto.html">Contacto</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
             </ul>
-            
         </nav>
     </header>
 
-    <main>
-        <!-- SOLO DE PRUEBA -->
-        <!-- <section class="hero-panel">
+    <main class="faq-page">
+        <section class="hero">
             <picture>
-                <source srcset="https://picsum.photos/id/12/1200/720" media="(min-width:1024px)">
-                <source srcset="https://picsum.photos/id/12/1024/620" media="(min-width:720px)">
-                <img src="https://picsum.photos/id/12/480/480" alt="Vista panorámica de destino turístico">
+                <source srcset="imgs/heroPanel/faq-hero.jpg" media="(min-width: 1024px)">
+                <source srcset="imgs/heroPanel/faq-hero.jpg" media="(min-width: 720px)">
+                <img src="imgs/heroPanel/faq-hero.jpg" alt="Preguntas Frecuentes - Tecnitours">
             </picture>
-        </section> -->
+            <div class="hero-content">
+                <h2>Preguntas Frecuentes</h2>
+                <p>Todo lo que necesitas saber sobre nuestros servicios</p>
+            </div>
+        </section>
+    
+        <section class="faq-contenedor">
+            <section class="faq-seccion">
+                <h2 class="seccion-titulo">Sobre las Reservas</h2>
+                
+                <div class="faq-preguntas">
+                    <div class="faq-item">
+                        <h3>¿Cómo puedo hacer una reserva?</h3>
+                        <p>Puedes realizar tu reserva de varias formas:</p>
+                        <ul>
+                            <li>Llamando a nuestros teléfonos: (+504) 2239-3157/56</li>
+                            <li>Por WhatsApp al 9954-8435</li>
+                            <li>Visitando nuestra oficina en Boulevard Suyapa</li>
+                            <li>A través de nuestro formulario de contacto en línea</li>
+                        </ul>
+                    </div>
+    
+                    <div class="faq-item">
+                        <h3>¿Con cuánta anticipación debo reservar?</h3>
+                        <p>Recomendamos realizar tu reserva con al menos:</p>
+                        <ul>
+                            <li>Viajes nacionales: 2 semanas de anticipación</li>
+                            <li>Viajes internacionales: 1-2 meses de anticipación</li>
+                            <li>Temporada alta: 3-4 meses de anticipación</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="faq-seccion">
+                <h2 class="seccion-titulo">Pagos y Financiamiento</h2>
+                
+                <div class="faq-preguntas">
+                    <div class="faq-item">
+                        <h3>¿Qué métodos de pago aceptan?</h3>
+                        <p>Aceptamos diversos métodos de pago:</p>
+                        <ul>
+                            <li>Tarjetas de crédito y débito</li>
+                            <li>Transferencias bancarias</li>
+                            <li>Efectivo en nuestra oficina</li>
+                            <li>Pagos en línea seguros</li>
+                        </ul>
+                    </div>
+    
+                    <div class="faq-item">
+                        <h3>¿Ofrecen planes de financiamiento?</h3>
+                        <p>Sí, contamos con diferentes opciones:</p>
+                        <ul>
+                            <li>Pago en cuotas con tarjetas participantes</li>
+                            <li>Reserva con un anticipo del 30%</li>
+                            <li>Planes personalizados según el destino</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="faq-seccion">
+                <h2 class="seccion-titulo">Nuestros Servicios</h2>
+                
+                <div class="faq-preguntas">
+                    <div class="faq-item">
+                        <h3>¿Qué servicios incluyen sus paquetes?</h3>
+                        <p>Nuestros paquetes pueden incluir:</p>
+                        <ul>
+                            <li>Boletos aéreos</li>
+                            <li>Hospedaje en hoteles seleccionados</li>
+                            <li>Traslados aeropuerto-hotel</li>
+                            <li>Tours y excursiones</li>
+                            <li>Seguro de viaje</li>
+                            <li>Asesoría personalizada</li>
+                        </ul>
+                    </div>
+    
+                    <div class="faq-item">
+                        <h3>¿Organizan viajes personalizados?</h3>
+                        <p>Sí, nos especializamos en crear itinerarios a medida según:</p>
+                        <ul>
+                            <li>Tus preferencias de destino</li>
+                            <li>Tu presupuesto</li>
+                            <li>Duración del viaje</li>
+                            <li>Actividades de interés</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="faq-seccion">
+                <h2 class="seccion-titulo">Documentación para Viajar</h2>
+                
+                <div class="faq-preguntas">
+                    <div class="faq-item">
+                        <h3>¿Qué documentos necesito para viajar?</h3>
+                        <p>Los documentos básicos requeridos son:</p>
+                        <ul>
+                            <li>Pasaporte vigente (mínimo 6 meses)</li>
+                            <li>Visas según el país de destino</li>
+                            <li>Identificación oficial</li>
+                            <li>Certificados de vacunación (según destino)</li>
+                        </ul>
+                    </div>
+    
+                    <div class="faq-item">
+                        <h3>¿Ayudan con los trámites de visa?</h3>
+                        <p>Sí, te apoyamos con:</p>
+                        <ul>
+                            <li>Información actualizada de requisitos</li>
+                            <li>Orientación en el proceso</li>
+                            <li>Revisión de documentación</li>
+                            <li>Agenda de citas en embajadas</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    
+            <div class="ayuda-contacto">
+                <h2>¿Tienes más preguntas?</h2>
+                <p>Nuestro equipo está listo para resolver todas tus dudas</p>
+                <a href="pages/contacto.html" class="btnContacto" target="_blank">
+                    Contáctanos
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
         <span>&copy; Tecnitours S. de R.L. 2024</span>
         <div class="redesSociales">
-            <a href="https://www.instagram.com/tecnitours?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
-            <a href="#" >WhatsApp</a>
+            <a href="https://www.facebook.com/p/Tecnitours-100063662585869/" target="_blank" aria-label="Facebook">
+                <img src="imgs/icons/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/tecnitours?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank" aria-label="Instagram">
+                <img src="imgs/icons/instagram.png" alt="Instagram">
+            </a>
         </div>
     </footer>
+
+
 </body>
+
+<script src="js/loader.js"></script> 
+
 </html>
