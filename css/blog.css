@@ -131,7 +131,20 @@
 }
 
 /* Media Queries */
-@media (min-width: 768px) {
+@media (min-width: 720px) {
+    .hero {
+        height: 60vh;
+        min-height: 350px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+    }
+    
     .blog-estructura {
         display: flex;
         flex-direction: row;

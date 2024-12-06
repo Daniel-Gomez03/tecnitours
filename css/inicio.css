@@ -5,6 +5,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
 
@@ -16,7 +17,8 @@ main {
 .image-container picture img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 40vh;
+    min-height: 350px;
 }
 
 .overlay-text {
@@ -245,6 +247,10 @@ button.next {
 @media (min-width: 720px) {
     main picture img {
         height: 370px; 
+    }
+
+    .image-container picture img {
+        height: 60vh;
     }
 
     .overlay-text {
