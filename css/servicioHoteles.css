@@ -34,7 +34,7 @@
     border-radius: 10px; 
 }
 
-.content-left h1 {
+.content-left h2 {
     font-size: 24px;
     line-height: 1;
     font-weight: 700;
@@ -237,13 +237,13 @@ input:valid, select:valid{
     flex-direction: column;
 }
 
-h2{
+.popular-container h2{
     text-align: center;
     margin-top: 8rem;
     margin-bottom: 1rem;
     font-size: 2rem; 
     font-weight: bold;
-    color: #efeced; 
+    color: #1f67a8; 
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -355,7 +355,7 @@ h2{
         left: 10%;
     }
     
-    .content-left h1 {
+    .content-left h2 {
         font-size: 38px;
     }
     
@@ -418,7 +418,7 @@ h2{
         left: 5%;
     }
 
-    .content-left h1 {
+    .content-left h2 {
         font-size: 38px;
     }
     
