@@ -1,4 +1,9 @@
 /* Hero section - Mobile First */
+.faq-page {
+    background-color: #efeced;
+    min-height: 100vh;
+}
+
 .hero {
     position: relative;
     height: 40vh;
@@ -160,7 +165,19 @@
 }
 
 /* Media Queries */
-@media (min-width: 768px) {
+@media (min-width: 720px) {
+    .hero {
+        height: 60vh;
+        min-height: 350px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+    }
 
     .faq-contenedor {
         max-width: 1200px;

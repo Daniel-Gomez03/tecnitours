@@ -147,6 +147,7 @@
 }
 
 .form-group {
+    color:#333;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -169,6 +170,7 @@ select {
     font-family: 'Montserrat', sans-serif;
     background-color: #fff;
     transition: all 0.3s ease;
+    color:#333;
 }
 
 input:hover,
@@ -235,18 +237,18 @@ select:focus {
     transform: translateX(4px);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
     .hero {
-        height: 45vh;
+        height: 60vh;
         min-height: 350px;
     }
 
     .hero-content h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .hero-content p {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     .content-container {
